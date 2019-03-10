@@ -5,12 +5,10 @@ public class Civilization {
     public int id;
     public String name;
     public String expansion;
-    public String armyType;
-    public String uniqueUnit;
-    public String uniqueTech;
-    public String teambonus;
-    public String[] civBonus;
-
-
+    public String army_type;
+    public String[] unique_unit;
+    public String[] unique_tech;
+    public String team_bonus;
+    public String[] civilization_bonus;
 
 }

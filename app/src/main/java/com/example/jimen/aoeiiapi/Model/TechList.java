@@ -2,8 +2,8 @@ package com.example.jimen.aoeiiapi.Model;
 
 import java.util.List;
 
-public class CivList {
+public class TechList {
 
-    public List<Civilization> civilizations;
+    public List<Tech> technologies;
 
 }

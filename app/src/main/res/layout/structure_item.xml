@@ -6,10 +6,10 @@
     android:layout_margin="4dp">
 
     <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:padding="8dp">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
 
 
         <LinearLayout
@@ -17,13 +17,13 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:text="Civilization: "
+                android:text="Structure: "
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"/>
 
             <TextView
-                android:id="@+id/civ_name"
+                android:id="@+id/str_name"
                 android:text="civName"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -42,7 +42,7 @@
                 android:layout_weight="1"/>
 
             <TextView
-                android:id="@+id/civ_expansion"
+                android:id="@+id/str_exp"
                 android:text="civName"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -55,13 +55,13 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:text="Army type: "
+                android:text="Age: "
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"/>
 
             <TextView
-                android:id="@+id/civ_army"
+                android:id="@+id/str_age"
                 android:text="civName"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -74,70 +74,13 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:text="Unique unit: "
+                android:text="Cost: "
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"/>
 
             <TextView
-                android:id="@+id/civ_unit"
-                android:text="civName"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:text="Unique tech: "
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"/>
-
-            <TextView
-                android:id="@+id/civ_tech"
-                android:text="civName"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:text="Team bonus: "
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"/>
-
-            <TextView
-                android:id="@+id/civ_tbonus"
-                android:text="civName"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:text="Civilization bonus: "
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"/>
-
-            <TextView
-                android:id="@+id/civ_cbonus"
+                android:id="@+id/str_cost"
                 android:text="civName"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
