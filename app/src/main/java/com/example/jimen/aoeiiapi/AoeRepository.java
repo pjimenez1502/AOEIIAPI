@@ -52,7 +52,9 @@ public class AoeRepository {
                 unitList.setValue(response.body().units);
             }
             @Override
-            public void onFailure(Call<UnitList> call, Throwable t) {}
+            public void onFailure(Call<UnitList> call, Throwable t) {
+                t.printStackTrace();
+            }
         });
         return unitList;
     }

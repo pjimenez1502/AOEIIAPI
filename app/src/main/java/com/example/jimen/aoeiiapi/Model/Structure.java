@@ -6,11 +6,7 @@ public class Structure {
     public String name;
     public String expansion;
     public String age;
-    public int[] cost;
-    public int build_time;
-    public int hit_points;
-    public int line_of_sight;
-    public String armor;
+    public Cost cost;
     public String[] special;
 
 }

@@ -31,7 +31,11 @@ public class StructuresAdapter extends RecyclerView.Adapter<StructuresAdapter.St
         holder.strName.setText(str.name);
         holder.strExpansion.setText(str.expansion);
         holder.strAge.setText(str.age);
-        holder.strCost.setText(Arrays.toString(str.cost));
+        holder.strCost.setText("Food: " + str.cost.Food + " / " +
+                "Wood: " + str.cost.Wood + " / " +
+                "Gold: " + str.cost.Gold + " / " +
+                "Stone: " + str.cost.Stone);
+        holder.strSpecial.setText(Arrays.toString(str.special));
     }
 
     @Override
@@ -46,6 +50,7 @@ public class StructuresAdapter extends RecyclerView.Adapter<StructuresAdapter.St
         TextView strExpansion;
         TextView strAge;
         TextView strCost;
+        TextView strSpecial;
 
         public StructuresViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -54,6 +59,7 @@ public class StructuresAdapter extends RecyclerView.Adapter<StructuresAdapter.St
             strExpansion = itemView.findViewById(R.id.str_exp);
             strAge = itemView.findViewById(R.id.str_age);
             strCost = itemView.findViewById(R.id.str_cost);
+            strSpecial = itemView.findViewById(R.id.str_special);
         }
     }
 }

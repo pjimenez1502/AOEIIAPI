@@ -19,6 +19,7 @@ public class CivsViewModel extends AndroidViewModel {
     }
 
     public LiveData<List<Civilization>> getCivs(){
+        System.out.println("+++++++++++++++++++++++++++++++++++++++"+aoeRepository.getCivs());
         return aoeRepository.getCivs();
     }
 }

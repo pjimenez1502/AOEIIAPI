@@ -30,6 +30,11 @@ public class TechAdapter extends RecyclerView.Adapter<TechAdapter.TechsViewHolde
         holder.techName.setText(tech.name);
         holder.techDesc.setText(tech.description);
         holder.techExp.setText(tech.expansion);
+        holder.techAge.setText(tech.age);
+        holder.techCost.setText("Food: " + tech.cost.Food + " / " +
+                "Wood: " + tech.cost.Wood + " / " +
+                "Gold: " + tech.cost.Gold + " / " +
+                "Stone: " + tech.cost.Stone);
     }
 
     @Override
@@ -42,6 +47,8 @@ public class TechAdapter extends RecyclerView.Adapter<TechAdapter.TechsViewHolde
         TextView techName;
         TextView techDesc;
         TextView techExp;
+        TextView techAge;
+        TextView techCost;
 
         public TechsViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -49,6 +56,8 @@ public class TechAdapter extends RecyclerView.Adapter<TechAdapter.TechsViewHolde
             techName = itemView.findViewById(R.id.tech_name);
             techDesc = itemView.findViewById(R.id.tech_desc);
             techExp = itemView.findViewById(R.id.tech_exp);
+            techAge = itemView.findViewById(R.id.tech_age);
+            techCost = itemView.findViewById(R.id.tech_cost);
         }
     }
 }

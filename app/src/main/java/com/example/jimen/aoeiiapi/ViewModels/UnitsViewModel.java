@@ -19,6 +19,7 @@ public class UnitsViewModel extends AndroidViewModel {
     }
 
     public LiveData<List<Unit>> getUnits() {
+        System.out.println("+++++++++++++++++++++++++++++++++++++++"+aoeRepository.getUnits().getValue());
         return aoeRepository.getUnits();
     }
 }

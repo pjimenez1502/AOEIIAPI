@@ -29,10 +29,13 @@ public class UnitsAdapter extends RecyclerView.Adapter<UnitsAdapter.UnitsViewHol
         Unit unit = unitList.get(position);
 
         holder.unitName.setText(unit.name);
-        holder.unitDesc.setText(unit.description[0]);
+        holder.unitDesc.setText(unit.description);
         holder.unitAge.setText(unit.age);
-        holder.unitCrIn.setText(unit.created_in[0]);
-        holder.unitCost.setText(Arrays.toString(unit.cost));
+        holder.unitCrIn.setText(unit.created_in);
+        holder.cost.setText("Food: " + unit.cost.Food + " / " +
+                            "Wood: " + unit.cost.Wood + " / " +
+                            "Gold: " + unit.cost.Gold + " / " +
+                            "Stone: " + unit.cost.Stone);
     }
 
     @Override
@@ -47,7 +50,7 @@ public class UnitsAdapter extends RecyclerView.Adapter<UnitsAdapter.UnitsViewHol
         TextView unitDesc;
         TextView unitAge;
         TextView unitCrIn;
-        TextView unitCost;
+        TextView cost;
 
         public UnitsViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -56,7 +59,7 @@ public class UnitsAdapter extends RecyclerView.Adapter<UnitsAdapter.UnitsViewHol
             unitDesc = itemView.findViewById(R.id.unit_description);
             unitAge = itemView.findViewById(R.id.unit_age);
             unitCrIn = itemView.findViewById(R.id.unit_creatin);
-            unitCost = itemView.findViewById(R.id.unit_cost);
+            cost = itemView.findViewById(R.id.unit_cost);
         }
     }
 }
